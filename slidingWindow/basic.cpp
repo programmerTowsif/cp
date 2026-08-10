@@ -44,13 +44,13 @@ int main(){
         cin>>arr[i];
     }
     // o(n**2)
-    // for(int i =0;i< (n -k +1);i++){
-    //     int sum =0;
-    //     for(int j = i ;j<k+i;j++){
-    //        sum+=arr[j];
-    //     }cout<<sum<<endl; // updated
+    for(int i =0;i< (n -k +1);i++){
+        int sum =0;
+        for(int j = i ;j<k+i;j++){
+           sum+=arr[j];
+        }cout<<sum<<endl; // updated
     
-   //}
+   }
 //    optimaization 
 // o(n) convert 
 int sum = 0;

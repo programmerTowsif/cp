@@ -1,8 +1,9 @@
 # Compiled C/C++ executable
-test
-maxSubArry
-optimizationOfmaxSubArry
+frefix_sum/test
+frefix_sum/maxSubArry
+frefix_sum/optimizationOfmaxSubArry
 slidingWindow/basic
+slidingWindow/maxOrmin
 *.out
 *.exe
 *.json
