@@ -1,0 +1,10 @@
+# Compiled C/C++ executable
+test
+*.out
+*.exe
+*.json
+# VS Code
+.vscode/
+
+# Other compiled files
+*.o
