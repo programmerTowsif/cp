@@ -2,6 +2,7 @@
 test
 maxSubArry
 optimizationOfmaxSubArry
+basic
 *.out
 *.exe
 *.json
