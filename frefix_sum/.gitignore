@@ -1,5 +1,6 @@
 # Compiled C/C++ executable
 test
+maxSubArry
 *.out
 *.exe
 *.json
