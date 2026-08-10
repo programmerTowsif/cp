@@ -21,7 +21,7 @@ int main(){
     for(int i =0;i< (n -k +1);i++){
         for(int j = i ;j<k+i;j++){
             cout<<arr[j]<<" ";
-        }cout<<endl;
+        }cout<<endl; // updated
     }
 /*
 input (n , k) 7 4

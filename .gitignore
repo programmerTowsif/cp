@@ -2,7 +2,7 @@
 test
 maxSubArry
 optimizationOfmaxSubArry
-basic
+slidingWindow/basic
 *.out
 *.exe
 *.json
