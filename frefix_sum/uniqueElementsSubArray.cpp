@@ -25,7 +25,7 @@ enter 8th elem (2,4,7)   5th element is not enroll
 7 2 3 1
 4 7 2 3 1  (max unique numbers)
 2 4 7 
-
+problem link :: https://cses.fi/problemset/task/1141
 */
 
 #include<bits/stdc++.h>
