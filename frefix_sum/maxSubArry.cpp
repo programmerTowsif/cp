@@ -8,6 +8,13 @@ int main() {
         cin>>x;
         v.push_back(x);
     }
-    for(auto x:v)cout<<x<<" ";
-    return 0;
+   int mx = INT_MIN;
+    for(int i =0;i<5;i++){
+        int sum =0;
+        for(int j =i;j<5;j++){
+            sum+=v[j];
+        }
+        mx = max(mx,sum);
+    }
+   cout<<mx<<endl;
 }
