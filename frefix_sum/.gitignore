@@ -1,6 +1,7 @@
 # Compiled C/C++ executable
 test
 maxSubArry
+optimizationOfmaxSubArry
 *.out
 *.exe
 *.json
