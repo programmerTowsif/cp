@@ -4,6 +4,7 @@ frefix_sum/maxSubArry
 frefix_sum/optimizationOfmaxSubArry
 slidingWindow/basic
 slidingWindow/maxOrmin
+slidingWindow/uniqueVlueMaxSUbArry
 *.out
 *.exe
 *.json
