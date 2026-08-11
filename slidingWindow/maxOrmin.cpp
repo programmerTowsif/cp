@@ -64,5 +64,11 @@ for(int i =0;i<n-k;i++){
   cout<<*st.begin() <<" "<<*st.rbegin()<<endl;
   st.erase(arr[i+1]);
 }
+// 7 4        
+// 1 8 -3 7 9 10 -2
+// -3 8
+// -3 9
+// -3 10
+// -2 10
     return 0;
 }
