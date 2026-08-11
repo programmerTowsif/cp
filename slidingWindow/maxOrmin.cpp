@@ -27,6 +27,42 @@ int main() {
     }
    */
 //   optimization 
-
+// 34 min 
+// flase idea 
+/*
+int mn = INT_MAX,mx = INT_MIN;
+for(int i =0;i<k;i++){
+    mx = max(mx,arr[i]);
+    mn = min(mn,arr[i]);
+}
+cout<<" minimum "<<mn<<"  "<<"max  "<<mx<<endl;
+for(int i = 0;i<n-k;i++){
+    if(mx <arr[k+i]) mx = arr[i];
+    else if(mn>arr[i]) mn = arr[i];
+    cout<<" minimum "<<mn<<"  "<<"max  "<<mx<<endl;
+}
+7 4
+1 8 2 -2 4 7 10
+ minimum -2  max  8
+ minimum -2  max  8
+ minimum -2  max  8
+ minimum -2  max  2
+*/
+// try 3rd idea 
+// i am using set , bz this continer actually sorted by decending order , first value lowest number and lasat value heighest number on continer 
+set<int>st;
+for(int i =0;i<k;i++){
+    st.insert(arr[i]);
+}
+int it = *st.begin();
+int itEn = *st.rbegin();
+st.erase(arr[0]);
+ 
+cout<<it <<" "<<itEn<<endl;
+for(int i =0;i<n-k;i++){
+  st.insert(arr[k+i]);
+  cout<<*st.begin() <<" "<<*st.rbegin()<<endl;
+  st.erase(arr[i+1]);
+}
     return 0;
 }
