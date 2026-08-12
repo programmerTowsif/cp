@@ -1,0 +1,16 @@
+# Compiled C/C++ executable
+frefix_sum/test
+frefix_sum/maxSubArry
+frefix_sum/optimizationOfmaxSubArry
+slidingWindow/basic
+slidingWindow/maxOrmin
+slidingWindow/uniqueVlueMaxSUbArry
+slidingWindow/sumOfSlidingWindow
+*.out
+*.exe
+*.json
+# VS Code
+.vscode/
+
+# Other compiled files
+*.o
