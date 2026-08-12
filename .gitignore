@@ -6,6 +6,7 @@ slidingWindow/basic
 slidingWindow/maxOrmin
 slidingWindow/uniqueVlueMaxSUbArry
 slidingWindow/sumOfSlidingWindow
+slidingWindow/anagram
 *.out
 *.exe
 *.json
