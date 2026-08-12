@@ -3,13 +3,13 @@
   1st string  ===> abaacab
   2nd string ===> baac
   check 1st string is a anagram of 2nd string 
-   
+
 */
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    string s , p ;
-    cin>>s>>p;
+    string s = "abaacab" , p ="baac";
+    // cin>>s>>p;
     int sIs = s.size();
     int Sp = p.size();
     map<char,int>AnP;
@@ -23,9 +23,9 @@ int main(){
      
     int ans =0;
     if(AnP == DS) {
-     ans=1;
+      cout<<0<<" ";
     }
-    else{
+    
     for(int i=0;i<sIs-Sp;i++){
         char x =  d.front();
         d.pop_front();
@@ -33,10 +33,14 @@ int main(){
         DS[x]--;
         DS[s[i+Sp]]++;
         if(AnP == DS) {
-         ans=1;
-         break;
+          cout<<i+1<<" ";
     }
     }
-    }
-    cout<<ans<<endl;
+   
+     
 }
+
+/*
+abab ab
+0  1 2 
+*/
