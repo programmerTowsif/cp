@@ -3,6 +3,7 @@ this [0 0 1 0 3 4 0] you make outpu shifting 0 right side
      [1  3  4 0 0 0]
 
 */
+// 1st version 
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main(){
@@ -66,53 +67,72 @@ this [0 0 1 0 3 4 0] you make outpu shifting 0 right side
      1   3   4  0    0   0   0
               r(p)
   */
-#include <bits/stdc++.h>
-using namespace std;
+ // second version 
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main() {
-    int n =7 ;
-    // cin >> n;
+// int main() {
+//     int n =7 ;
+ 
+
+//     vector<int> vc = {0, 0, 1, 0, 3, 4, 0};
+
+    
+
+//     int green = 0, red = 0;
+//      //            g
+//     //   {1, 0, 0, 0, 3, 4, 0};
+//       //     r 
+//     while (green < n && red < n) {
+//          while (red < n && vc[red] != 0)
+//             red++;
+//         if (red >= n)
+//             break;
+//         green = max(green, red + 1);
+//         while (green < n && vc[green] == 0)
+//             green++;
+//        if (green >= n)
+//             break;
+//         swap(vc[red], vc[green]);
+
+//         red++;
+//         green++;
+//     }
+
+//     for (auto x : vc) {
+//         cout << x << " ";
+//     }
+
+//     return 0;
+// }
+ 
+
+// 3rd version 
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+         int n =7 ;
+ 
 
     vector<int> vc = {0, 0, 1, 0, 3, 4, 0};
+     for(auto x:vc)cout<<x<<" ";
+    int firstZero =-1;
+    for(int i=0;i<n;i++) {
+        if(vc[i] ==0) {
+        firstZero =i;
+        break; }
+    }
+    if(firstZero == -1) return 0;
 
-    // for (int i = 0; i < n; i++) {
-    //     int x;
-    //     cin >> x;
-    //     vc.push_back(x);
-    // }
-
-    int green = 0, red = 0;
-
-    while (green < n && red < n) {
-
-        // red দিয়ে 0 খুঁজছি
-        while (red < n && vc[red] != 0)
-            red++;
-
-        if (red >= n)
-            break;
-
-        // green কে red-এর পর থেকে শুরু করাচ্ছি
-        green = max(green, red + 1);
-
-        // green দিয়ে non-zero খুঁজছি
-        while (green < n && vc[green] == 0)
-            green++;
-
-        if (green >= n)
-            break;
-
-        // 0 এবং non-zero swap
-        swap(vc[red], vc[green]);
-
-        red++;
+    int green = firstZero ,red=firstZero;
+    while(green<n && red<n){
+        while(green<n && vc[green] ==0) green++;
+        if(green >= n) break;
+        swap(vc[green],vc[red]);
         green++;
+        red++;
     }
-
-    for (auto x : vc) {
-        cout << x << " ";
-    }
-
-    return 0;
+    for(auto x:vc)cout<<x<<" ";
+    cout<<endl;
 }
-// time : 30mint
