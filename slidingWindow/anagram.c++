@@ -44,3 +44,5 @@ int main(){
 abab ab
 0  1 2 
 */
+
+//time 1.24 
