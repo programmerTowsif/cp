@@ -22,27 +22,27 @@ for 9th elements:   [5 , 2 , 4  ]
 */
 
 
-// #include<bits/stdc++.h>
-// using namespace std;
-// int main(){
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
 
-//   int arr[] = {1 , 3 ,  1 , 4 , 3 , 2 , 4 , 2 , 5};
-//   map<int,int>mp;
-//   queue<int>q;
-//   int ans =0;
-//   for(int i =0;i<8;i++){
-//     mp[arr[i]]++;
-//     q.push(arr[i]);
-//     while(mp[arr[i]]>1){
-//       int x = q.front();
-//             q.pop();
+  int arr[] = {1 , 3 ,  1 , 4 , 3 , 2 , 4 , 2 , 5};
+  map<int,int>mp;
+  queue<int>q;
+  int ans =0;
+  for(int i =0;i<8;i++){
+    mp[arr[i]]++;
+    q.push(arr[i]);
+    while(mp[arr[i]]>1){
+      int x = q.front();
+            q.pop();
 
-//             mp[x]--;
-//     }
-//     ans = max(ans,(int)q.size());
-//   }
-//   cout<<ans<<endl;
-// }
+            mp[x]--;
+    }
+    ans = max(ans,(int)q.size());
+  }
+  cout<<ans<<endl;
+}
 
 
 /*
